@@ -208,6 +208,8 @@ input {
     text-decoration: none;
 }
 
+/* making responsive for small screen */
+
 @media screen and (max-width:576px) {
 
     nav,
@@ -250,6 +252,8 @@ input {
     }
 
 }
+
+/* making responsive for medium screen */
 
 @media screen and (min-width:577px) and (max-width:992px) {
 
