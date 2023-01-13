@@ -56,12 +56,12 @@ nav li {
 
 .banner-title {
     font-weight: 700;
-    font-size: 85px;
+    font-size: 5rem;
 }
 
 .banner-sub-title {
     font-weight: 600;
-    font-size: 45px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -147,6 +147,7 @@ section {
 .resume-content {
     display: flex;
     gap: 24px;
+    padding: 0 30px;
 }
 
 .resume-item {
@@ -209,6 +210,8 @@ input {
 
 @media screen and (max-width:576px) {
 
+    nav,
+    nav ul,
     .skills-container,
     .resume-content,
     .about-info-container,
@@ -216,6 +219,73 @@ input {
         flex-direction: column;
         gap: 20px;
         padding: 0 20px;
+    }
+
+    nav ul {
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+
+    .banner {
+        margin: 10px 30px;
+        flex-direction: column-reverse;
+        padding: 10px 0;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    .about {
+        padding: 20px 10px;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    nav,
+    nav ul,
+    .skills-container,
+    .about-info-container,
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+
+    .banner {
+        margin: 10px 30px;
+        flex-direction: column-reverse;
+        padding: 10px 0;
+    }
+
+    .banner img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin-top: 50px;
     }
 
     .about {
